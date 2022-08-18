@@ -1,0 +1,86 @@
+
+
+## Questions:
+
+Q1. What is the difference between var and let?
+ ANS: let is used to define constants, the values which are meant to be constant always whereas var is used
+ to define variables for which values can be changed anytime.
+ 
+
+Q2. What is an optional?
+ ANS: An optional in swift is basically a constant or variable which can either hold a value or can be nil
+ means no value at all. It is denoted by appending a "?" after the declaration. 
+
+
+Q3. What is optional chaining vs optional binding?
+ ANS: Optional chaining is a process of calling methods, properties and subscripts on an optional. It depends
+ if the optional is returning value or returning nil but it will always return a type of optional value.
+ Optional binding is the method of checking in a safe way wether the constant has a value or nil, as we know
+ forcing unwrap creates a runtime error if it doesn't have any value I.e nil.
+
+
+Q4. What are the different ways to unwrap an optional? How do they work? Are they safe?
+ ANS: Following are methods to unwrap optional:
+
+1. By using an if-else block. Check the optional variable by putting not equal to nil and else print it 
+Has no value.
+
+2. Unwrap an optional type with forced unwrapping. This method is usually used when we are sure that an 
+Optional has a value. We do this by us adding ! Sign with optional variable.
+
+3. Unwrap an optional type with the nil coalescing operator. This method is similar to if else block with 
+Just a single operator I.e. ??
+
+4. Optional Binding unwrapping method. Check the optional variable by putting not equal to nil, if it has some value,
+It can be stored to some temporary variable.
+
+Methods 1,3,4 are safe to use.
+
+
+Q5. What is a closure?
+
+ANS: A closure is a special type of function that has no name, we may call a function without name.
+ Syntax: { (parameters) -> returnType in
+          // statements}
+
+
+Q6. What is the difference between a class and a struct?
+
+ANS: The main difference between Classes and struct is that classes are reference type and structs are value
+Type. It means reference type is actually you are pointing as a pointer and in value you are actually copying 
+Which does not change the value.
+
+
+Q7. What is the syntax '??' do?
+
+ANS: ?? Syntax is used for Unwrapping an optional type and is called coalescing operator.
+
+
+Q8. What is a tuple?
+
+ANS: A tuple is a group of different values means each value in tuple can be of different data types 
+And its elements can be accessed like an array.  
+
+
+Q9. What is Any vs AnyObject?
+
+ANS: Any can represent an instance of any type at all including function types whereas anyobject can represent 
+Any class type. 
+
+
+
+Q10. What is a protocol?
+
+ANS: In swift a protocol is like blueprint of methods or properties that can then be adopted by classes or
+Any other types and they must conform to the protocol.
+
+
+Q11. What is Delegation?
+
+ANS: Delegation is used for everything from handling table view events using UITABLEVIEWDELEGATE, to modifying
+Cache behaviour using NSCacheDelegate. The core objective is to allow an object to communicate back to its 
+Owner in a decoupled way.
+
+
+Read this article
+https://developer.apple.com/documentation/swift/choosing_between_structures_and_classes
